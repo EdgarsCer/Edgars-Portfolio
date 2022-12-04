@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.root {
+  --Line: 15px;
+}
+
+p {
+  padding: 15px;
+  margin: 0;
+}
+
+
+
+body {
+  background-color: rgb(130, 163, 172);
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  font-size: 30px;
+  outline-style: outset;
+  outline-width: 15px;
+}
+
+nav {
+  font-size: 30px;
+  font: bolder;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: black;
+}
+
+nav li {
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav li a {
+  color: black;
+}
+
+/* .hero-banner div {
+  display: flex;
+  align-items: stretch;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  grid-template-rows: 300px 300px 300px 100px;
+  grid-template-areas:
+    "am w w"
+    "am w w"
+    "am w w"
+    "c c c";
+  outline-style: outset;
+  outline-width: 15px;
+}
+
+.about-me {
+  grid-area: am;
+  background-image: url(../images/about.WebP);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  outline-style: outset;
+  outline-width: 15px;
+  color: aliceblue;
+}
+
+.about-me h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* .workk {
+  grid-area: w;
+  outline-style: outset;
+  outline-width: 15px;
+  color: aqua;
+  outline-color: black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+} */
+
+.workk a {
+  color: aqua;
+}
+.workk a h3{
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  font: bolder;
+}
+.contacts {
+  grid-area: c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  gap: 20px;
+  outline-style: outset;
+  outline-width: 15px;
+  background-color: rgb(130, 163, 172);
+}
+
+.workk {
+  grid-area: w;
+  display: grid;
+  outline-style: outset;
+  outline-width: 15px;
+  color: aqua;
+  outline-color: black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one one"
+    "two tree"
+    "four four";
+  width: 100%;
+  height: 100%;
+}
+
+.first-work {
+  grid-area: one;
+  outline-style: outset;
+  outline-width: 15px;
+  outline-color: black;
+}
+
+.second-work {
+  grid-area: two;
+  outline-style: outset;
+  outline-width: 15px;
+  outline-color: black;
+}
+
+.third-work {
+  grid-area: tree;
+  outline-style: outset;
+  outline-width: 15px;
+  outline-color: black;
+}
+
+.forth-work {
+  grid-area: four;
+  outline-style: outset;
+  outline-width: 15px;
+  outline-color: black;
+}
+
+.first-work {
+  background-position: center;
+  background-size: cover;
+}
+
+.second-work {
+  background-position: center;
+  background-size: cover;
+}
+
+.third-work {
+  background-position: center;
+  background-size: cover;
+}
+
+.forth-work {
+  background-position: center;
+  background-size: cover;
+
+}
+
+.first-work:hover,
+.second-work:hover,
+.third-work:hover,
+.forth-work:hover {
+  transform: scale(1.4);
+  transition: all 1s ease-out;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "am am"
+      "w w"
+      "w w"
+      "w w"
+      "c c";
+  }
+
+  nav {
+    font-size: 10px;
+    font: bolder;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px;
+    margin-top: 40px;
+    color: black;
+  }
+
+  li {
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    text-shadow: none;
+  }
+
+  .workk {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "tree"
+      "four";
+  }
+
+  .contacts {
+    font-size: 10px;
+  }
+.workk div a{
+  display: flexbox;
+  
+}
+}
