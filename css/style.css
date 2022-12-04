@@ -152,6 +152,7 @@ nav li a {
   outline-style: outset;
   outline-width: 15px;
   outline-color: black;
+  background-image: url(../images/one.jpg);
 }
 
 .second-work {
@@ -159,6 +160,7 @@ nav li a {
   outline-style: outset;
   outline-width: 15px;
   outline-color: black;
+  background-image: url(../images/two.jpg);
 }
 
 .third-work {
@@ -166,6 +168,7 @@ nav li a {
   outline-style: outset;
   outline-width: 15px;
   outline-color: black;
+  background-image: url(../images/three.jpg);
 }
 
 .forth-work {
@@ -173,6 +176,7 @@ nav li a {
   outline-style: outset;
   outline-width: 15px;
   outline-color: black;
+  background-image: url(../images/four.jpg);
 }
 
 .first-work {
